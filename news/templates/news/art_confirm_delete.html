@@ -1,0 +1,15 @@
+{% extends 'main/omg.html' %}
+{% block met %}
+<div class="features">
+	<h1>Удаление статьи</h1>
+	<form method="post">
+		{%csrf_token%}
+		
+		<span>{{error}}</span>
+		<button class="btn btn-success" type ='sumbit'>Удалить статью</button>
+	</form>
+</div>
+{% endblock %}
+{% block lol %}
+Форма по добавлению статьи
+{%endblock%}

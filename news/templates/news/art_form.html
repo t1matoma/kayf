@@ -1,0 +1,19 @@
+{% extends 'main/omg.html' %}
+{% block met %}
+<div class="features">
+	<h1>Форма по добавлению статьи</h1>
+	<h2>дата должна выглядеть примерно так 2023-08-05 12:12:12</h2>
+	<form method="post">
+		{%csrf_token%}
+		{{form.title}}<br>
+		{{form.anons}}<br>
+		{{form.full_text}}<br>
+		{{form.date}}<br>
+		<span>{{error}}</span>
+		<button class="btn btn-success" type ='sumbit'>Добавить статью</button>
+	</form>
+</div>
+{% endblock %}
+{% block lol %}
+Форма по добавлению статьи
+{%endblock%}

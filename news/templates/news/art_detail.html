@@ -1,0 +1,13 @@
+{% extends 'main/omg.html' %}
+{% block met %}
+<div class="features">
+	<h1>{{ art.title }}</h1>
+	<p>{{ art.date}}</p>
+	<p>{{art.full_text}}</p>
+	<a href="{%url 'news-delete' art.id%}" class="btn btn-danger">Удалить</a>
+	<a href="{%url 'news-update' art.id%}" class="btn btn-info">Редактировать</a>
+</div>
+{% endblock %}
+{% block lol %}
+{{ art.title }}
+{%endblock%}
